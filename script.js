@@ -24,6 +24,28 @@ function spinWords(word){
     return arr.join(" ")
 }
 
+function getIndexOfTarget(nums, target) {
+    for (let i = 0; i < nums.length; i++)
+        for (let j = i; j < nums.length; j++)
+            if (nums[i] + nums[j] === target)
+                return [i, j];
+
+    return [];
+}
+
+function getLargestPrefix(strings) {
+    let prefix = strings[0].slice(-1);
+    let prefixLength = 1;
+    while(true) {
+        for (let i = 0; i < strings.length; i++) {
+            if(!strings[i].endsWith(prefix))
+                return prefix.slice(1).length > 1 ? prefix.slice(1) : '';
+        }
+        prefixLength++;
+        prefix = strings[0].slice(-prefixLength);
+    }
+}
+
 
 const students = [
     { name: 'Павел', age: 20 },
@@ -47,3 +69,8 @@ counter2() // 1
 console.log(counter2())
 
 console.log(spinWords("Привет от Legacy"))
+
+console.log(getIndexOfTarget([4,6,7,12,4,7,23], 30));
+
+console.log(getLargestPrefix(["цветок","поток","хлопок"]));
+console.log(getLargestPrefix(["собака","гоночная машина","машина"]));
