@@ -1,0 +1,47 @@
+/* Block Wrapper */
+.tic-tac-toe-wrapper {
+    max-width: 532px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 100px auto;
+    padding: 16px;
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .tic-tac-toe-wrapper {
+        font-size: 16px;
+    }
+}
+
+.tic-tac-toe-inner {
+    width: 100%;
+}
+    
+/* Game */
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5em;
+    padding: .5em;
+    border: 1px solid black;
+    aspect-ratio: 1;
+}
+
+.tic-tac-toe__ceil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    cursor: pointer;
+    font-size: 4em;
+}
+
+/* Current move */
+.tic-tac-toe__current-move {
+    font-size: 2em;
+}

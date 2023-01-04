@@ -1,0 +1,12 @@
+@import "tic-tac-toe.css";
+@import "global.css";
+@import "fonts.css";
+
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
