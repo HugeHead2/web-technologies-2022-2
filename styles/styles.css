@@ -1,0 +1,134 @@
+.pizza-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.pizza-types {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60%;
+}
+
+.pizza-item div p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.pizza-settings p span {
+  font-size: 20px;
+}
+
+.pizza-settings p {
+  font-size: 20px;
+}
+
+.pizza-item div img {
+  width: 300px;
+}
+
+.toppings {
+  display: flex;
+}
+
+.topping img {
+  width: 100px;
+}
+
+body {
+  background-color: lightgrey;
+  padding: 30px;
+}
+
+.pizza-select-menu {
+  background-color: white;
+  height: auto;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 10px 9px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 9px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 9px rgba(34, 60, 80, 0.2);
+}
+
+.sizes button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.sizes {
+  padding: 4px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: lightgrey;
+  border-radius: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sizes button.active {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.08);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.08);
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.08);
+}
+
+.topping {
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.15);
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.15);
+  border-radius: 30px;
+}
+
+.topping p {
+  text-align: center;
+}
+
+.topping {
+  font-size: 20px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.pizza-settings {
+  width: 25%;
+}
+
+.toppings {
+  justify-content: space-between;
+}
+
+#addToCartBtn {
+  margin-top: 10vh;
+  width: 100%;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: rgb(255, 105, 0);
+  color: white;
+  font-weight: bold;
+}
+
+#addToCartBtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 120, 20);
+}
+
+/*# sourceMappingURL=styles.css.map */
