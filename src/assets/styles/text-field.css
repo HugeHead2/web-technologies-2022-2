@@ -1,0 +1,16 @@
+.text-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-field__input {
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.text-field__error {
+    height: 1rem;
+    font-size: .6rem;
+    color: red;
+}
