@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <a href="/index.html">index</a>
+        <a href="/login.html">login</a>
+        <a href="/reg.html">reg</a>
+    </nav>
+</header>
+
+<main class="main">
+    <form
+        id="login-form"
+        class="form"
+    >
+        <label class="text-field">
+            <input
+                type="text"
+                class="text-field__input"
+                name="email"
+                placeholder="Email"
+            >
+            <span class="text-field__error"></span>
+        </label>
+
+        <label class="text-field">
+            <input
+                type="password"
+                class="text-field__input"
+                name="password"
+                placeholder="Password"
+            >
+            <span class="text-field__error"></span>
+        </label>
+
+        <button
+            type="submit"
+            class="button"
+        >
+            Войти
+        </button>
+    </form>
+</main>
+
+<div class="loader-wrapper" data-loading>
+    <img
+        src="./src/assets/icons/loader.svg"
+        alt=""
+        class="loader"
+    >
+</div>
+
+<script src="src/pages/login.js" type="module"></script>
+</body>
+</html>
