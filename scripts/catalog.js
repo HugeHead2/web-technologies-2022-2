@@ -113,7 +113,6 @@ class Catalog {
 }
 
 const renderPostItem = item => `
-    <li>
     <a  href="posts.html?post=${item.id}" class="post-item">
         <span class="post-item__title">
             ${item.title}
@@ -123,7 +122,6 @@ const renderPostItem = item => `
             ${item.body}
         </span>
     </a>
-    </li>
 `
 
 const getPostItems = async ({ limit, page }) => {

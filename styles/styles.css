@@ -1,0 +1,41 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.catalog__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.catalog__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.catalog__pagination-item {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.catalog__pagination-item_active {
+    background-color: grey;
+    color: white;
+}
+
+.post-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.post-item__title {
+    font-weight: 600;
+}
